@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tracking Covid-19</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./libraries/chart.js/dist/chart.js"></script>
+    <script src="./libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      function loadScript(url)
+      {    
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+      }
+    </script>
+    <h1 id="page_title"></h1>
+    <h3 id="page_subtitle">Note: This is a representation of newly reported covid-19 cases over time. It does not
+      represent cases in relation to population or does it take a country's individual political climate or health care system</h3>
+    <div id="parent" style="position:relative;">
+      <div id="world_map"></div>
+    </div>
+    <div class="container">
+      <h2 id="map_title"></h2>
+      <input type="radio" id="yearZeroBox">
+      <label id="yearZeroBoxLabel">Year - 2020</label>
+      <input type="radio" id="yearOneBox">
+      <label id="yearOneBoxLabel">Year - 2021</label>
+      <input type="radio" id="monthsBox">
+      <label id="monthsBoxLabel">Monthly</label>
+    </div>
+    <div id="monthsSlider">
+      <div id="slider">
+        <input id='months' type='range' min='1' max='24' value='1' step='1' class="n n5"/>
+      </div>
+      <div id="sliderLabels">
+        <label style="left: 50px">Jan '20</label>
+        <label style="left: 65px">Feb '20</label>
+        <label style="left: 85px">Mar '20</label>
+        <label style="left: 105px">Apr '20</label>
+        <label style="left: 130px">May '20</label>
+        <label style="left: 150px">Jun '20</label>
+        <label style="left: 170px">Jul '20</label>
+        <label style="left: 195px">Aug '20</label>
+        <label style="left: 215px">Sep '20</label>
+        <label style="left: 235px">Oct '20</label>
+        <label style="left: 260px">Nov '20</label>
+        <label style="left: 280px">Dec '20</label>
+        <label style="left: 300px">Jan '21</label>
+        <label style="left: 320px">Feb '21</label>
+        <label style="left: 340px">Mar '21</label>
+        <label style="left: 365px">Apr '21</label>
+        <label style="left: 385px">May '21</label>
+        <label style="left: 405px">Jun '21</label>
+        <label style="left: 430px">Jul '21</label>
+        <label style="left: 450px">Aug '21</label>
+        <label style="left: 475px">Sep '21</label>
+        <label style="left: 495px">Oct '21</label>
+        <label style="left: 515px">Nov '21</label>
+        <label style="left: 525px">Dec '21</label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <h2 id="graph_title"></h2>
+        </div>
+      </div>
+      <div class="chartBox">
+        <canvas id="barChart"></canvas>
+      </div>
+    </div>
+    <script src="mapAndGraph.js"></script>
+  </body>
+</html>

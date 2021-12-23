@@ -1,0 +1,109 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+#page_title {
+  font-family:Helvetica;
+  font-size:22px;
+  position: relative;
+  left: 620px;
+  /*text-align: center;*/
+}
+
+#page_subtitle {
+  font-family:Helvetica;
+  font-size:12px;
+  position: relative;
+  left: 220px;
+  /*text-align: center;*/
+}
+
+h2 {
+  font-family:Helvetica;
+  font-size:16px;
+  position: relative;
+  /*text-align: center;*/
+  left: 600px;
+  top: 10px;
+}
+
+h3 {
+  font-family:Helvetica;
+  font-size:18px;
+  position: relative;
+  /*text-align: center;*/
+  /*top: 40px;*/
+}
+
+input[type="radio"] {
+  width:25px;
+  height:25px;
+  position: relative;
+}
+
+#graph_title {
+  top: 70px;
+}
+
+.chartBox {
+  top: 70px;
+  position: relative;
+  width:1500px !important;
+  height:300px !important;
+}
+
+input[type="range"] {
+  position: relative;
+  top: 20px;
+  left: 50px;
+  width: 1500px;
+}
+
+label {
+  font-family:Helvetica;
+  font-size:12px;
+  position: relative;
+  top: 20px;
+}
+
+#world_map {
+  position: relative;
+  top: 10px;
+  left: 50px;
+  width: 1500px;
+  height: 750px;
+}
+
+#yearZeroBox {
+  top: 10px;
+  left: 500px;
+}
+#yearZeroBoxLabel {
+  top: 5px;
+  left: 500px;
+}
+
+#yearOneBox {
+  top: 10px;
+  left: 600px;
+}
+#yearOneBoxLabel {
+  top: 5px;
+  left: 600px;
+}
+
+#monthsBox {
+  top: 10px;
+  left: 700px;
+}
+#monthsBoxLabel {
+  top: 5px;
+  left: 700px;
+}
